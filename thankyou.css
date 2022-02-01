@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+
+body
+ {
+     /* Used if the image is unavailable */
+     content: '';
+     
+     width: 100vw;
+     height: 100vh;
+     background-image: url("tw.jpg");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     -webkit-background-size: cover;
+     background-size: cover;
+}
+h1{
+    color:red;
+    text-align:center;
+    height:30px;
+    margin-top: 30%;
+   
+
+}
+h2{
+    color:red;
+    text-align:center;
+}
+@media only screen and (min-width: 1000px) {
+    .items{
+    grid-template-columns:(repeat(2,1fr);
+    }
+    }
+    @media only screen and (min-width: 768px) {
+    .items{
+    grid-template-columns:(repeat(1,1fr);
+    }
+    }
+    
+    
+    
+      

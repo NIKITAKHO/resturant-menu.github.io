@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing:border-box;
+
+}
+body {
+    background-color: #f3f3f3; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+
+
+
+h1{
+    text-align: center;
+    color:green;
+    padding: 20px;
+}
+nav{
+    background-color:red;
+    display: grid;
+    place-items: center;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-in;
+
+
+}
+nav ul a:hover{
+    background-color: red;
+    color:white;
+
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px,20px;
+    grid-column-gap:20px ;
+    grid-row-gap:30px;    
+     
+
+}
+
+.item img{
+    width:700px;
+    height:300px;
+    object-fit:center;
+    cursor:pointer;
+    transition: 0.2s ease;
+    border-radius:20px;
+  
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding:5px;
+    text-align: center;
+    font-size:400;
+    text-align:left;
+}
+.item h5{
+        font-size:150%;
+}
+.item button{
+    padding:5px 30px;
+    border:none;
+    outline:none;
+    background-color: red;
+    color: white;
+    cursor:pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin:0 auto;
+    transition: 0.2s all;
+    button-align:left;
+    position:relative;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+.item select{
+ padding:5px 30px;
+ background-color:yellow;
+ position:center;
+}
+@media only screen and (min-width: 1000px) {
+.items{
+grid-template-columns:(repeat(2,1fr);
+}
+}
+@media only screen and (min-width: 768px) {
+.items{
+grid-template-columns:(repeat(1,1fr);
+}
+}
+
+
+
+  

@@ -1,0 +1,11 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: tomato;
+}
+.p{
+    color:black;
+    text-align: center;
+}

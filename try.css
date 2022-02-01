@@ -1,0 +1,21 @@
+<?php>
+$NAME= $_POST['a'];
+$CONTACT = $_POST['b'];
+$EMAIL = $_POST['c'];
+$Table Number = $_POST['d'];
+
+$conn = new mysqli('localhost','root','','mtlog');
+if($conn->connect_error)
+{
+    die('connection failed  : '.$conn->connect_error);
+}else{
+    $stmt = $conn->prepare("insert into codingth(NAME,CONTACT,EMAIL,Table Number)
+    values(?,?,?,?");
+    $stmt->blind_param("sssssi",$NAME,$CONTACT,$EMAIL,$Table Number);
+    $stmt->execute();
+    echo"welcome to my resturant...";
+    $stmt->close();
+    $conn->close();
+}
+
+<?php>
